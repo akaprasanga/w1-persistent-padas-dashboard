@@ -99,7 +99,7 @@ st.plotly_chart(fig)
 st.write('Based on the bar graph, milk requires the least amount of animal feed in order to be produced. From the bar graph, we see that the proteins and other products such as cheese, milk, and eggs from farm animals requires a lot of animal feed to be produced')
 
 st.header('The effect of food processing on carbon emissions')
-st.plotly_chart(px.imshow(px.scatter(my_dataset, x = "Total_emissions", y = "Food product")))
+st.plotly_chart(px.scatter(my_dataset, x = "Total_emissions", y = "Food product"))
 st.write('Based on the scatter plot, food products that require more processing emit more carbon into the atmosphere. This can be due to the stages of processing that occur before each product is sold.')
 
 
@@ -108,10 +108,10 @@ st.write('Based on the scatter plot, food products that require more processing 
 ######################Nikol start here
 st.header('The Correlation Between Land Use Change and Total CO2 Emissions')
 st.write('The first pie graph represents the total CO2 emissions of each food category. According to the pie graph above, we can see that livestock accounts for the highest amount of total CO2 emissions, with over 50%. This means that they use the highest amount of most of the category of emissions. Comparing the graph to the original data, it can be seen that the category with more farming is typically what has the highest total emissions output.')
-st.plotly_chart(px.imshow(px.pie(my_dataset, values='Total_emissions', names='food_category')))
+st.plotly_chart(px.pie(my_dataset, values='Total_emissions', names='food_category'))
 
 st.write('The pie graph shown below represents the land use change for each food category. Similarly to the total CO2 emissions graph, here you can see that livestock has a significantly higher amount of land use change, with just over 41%. The order of highest to lowest land use change is the exact same as the order of highest to lowest CO2 emissions, showing a clear correlation between the two.')
-st.plotly_Chart(px.imshow(px.pie(my_dataset, values='Land use change', names='food_category')))
+st.plotly_Chart(px.pie(my_dataset, values='Land use change', names='food_category'))
 
 st.header('Drawing Conclusions')
 st.write('.....')
