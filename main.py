@@ -52,7 +52,7 @@ category_dataset = category.sum()
 ##### edited here
 # fiona
 st.header("Correlation Plot Between Food Categories and Columns")
-st.write("In the correlation graph, it can be seen that most CO2 is emitted in the category of livestock. This includes beef herding, dairy herding, etc. In contrast, the fruit or veggie category and grains category yielded the smallest number of CO2 emissions. The dairy and oils category had the second fewest number of CO2 emissions and the /"other/" category was the category which had the second most CO2 emissions. Additionally, it is notable that the farm column released the most emissions when being compared to other columns. In conclusion, the farming and livestock release the most CO2 emissions and therefore, they are the most harmful for the planet.")
+st.write('In the correlation graph, it can be seen that most CO2 is emitted in the category of livestock. This includes beef herding, dairy herding, etc. In contrast, the fruit or veggie category and grains category yielded the smallest number of CO2 emissions. The dairy and oils category had the second fewest number of CO2 emissions and the "other" category was the category which had the second most CO2 emissions. Additionally, it is notable that the farm column released the most emissions when being compared to other columns. In conclusion, the farming and livestock released the most CO2 emissions and therefore, they are the most harmful for the planet.')
 st.plotly_chart(px.imshow(category_dataset))
 
 st.header("Histogram Chart of Land Use Changes")
