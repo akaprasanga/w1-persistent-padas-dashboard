@@ -7,6 +7,21 @@ import plotly.figure_factory as ff
 warnings.filterwarnings("ignore") 
 
 st.title('Environmental Impact of Food')
+st.header('Cool Team Behind This Project')
+
+####### Team Description
+
+
+st.write("Fiona Law:: Hi, I'm Fiona and I'm a sophomore at Woodbridge High School in California.")
+st.write("Michael Jiang:: Hi, I'm Michael and I'm a freshman at the Gilman School in Baltimore, Maryland.")
+st.write("Nikol Miasik:: Hi, my name is Nikol and I'm a senior at Stelly's Secondary School in BC, Canada.")
+st.write("Edward:: Hello, I am Edward and I am a freshman at Camas high school, Washington")
+st.write("Prasanga Neupane:: Hi I am Prasanga and I am instructor of this group.")
+
+
+#######
+
+
 st.header('Dataset')
 st.write('Explanation of the entire dataset followed by Columns description.' )
 # Data Exploration
@@ -52,7 +67,7 @@ category_dataset = category.sum()
 ##### edited here
 # fiona
 st.header("Correlation Plot Between Food Categories and Columns")
-st.write('In the correlation graph, it can be seen that most CO2 is emitted in the category of livestock. This includes beef herding, dairy herding, etc. In contrast, the fruit or veggie category and grains category yielded the smallest number of CO2 emissions. The dairy and oils category had the second fewest number of CO2 emissions and the "other" category was the category which had the second most CO2 emissions. Additionally, it is notable that the farm column released the most emissions when being compared to other columns. In conclusion, the farming and livestock released the most CO2 emissions and therefore, they are the most harmful for the planet.')
+st.write('In the correlation graph, it can be seen that most CO2 is emitted in the category of livestock. This includes beef herding, dairy herding, etc. In contrast, the fruit or veggie category and grains category yielded the smallest number of CO2 emissions. The dairy and oils category had the second fewest number of CO2 emissions and the "other" category was the category which had the second most CO2 emissions. Additionally, it is notable that the farm column released the most emissions when being compared to other columns.')
 st.plotly_chart(px.imshow(category_dataset))
 
 st.header("Histogram Chart of Land Use Changes")
@@ -80,7 +95,7 @@ fig.update_layout(barmode='stack', xaxis={'categoryorder':'total descending'})
 st.plotly_chart(fig)
 
 st.header('Food Product and Transportation')
-st.write('The relationship between food product and the transportation cost')
+st.write('The relationship between food product and the transportation cost.)
 fig = px.bar(my_dataset, x='Food product', y='Transport')
 fig.update_layout(barmode='stack', xaxis={'categoryorder':'total descending'})
 #fig.show()
@@ -114,5 +129,5 @@ st.write('The pie graph shown below represents the land use change for each food
 st.plotly_chart(px.pie(my_dataset, values='Land use change', names='food_category'))
 
 st.header('Drawing Conclusions')
-st.write('.....')
+st.write('With the data and visualization we can conclude that livestock has the highest overall impact on CO2 emissions.')
 st.write('')
