@@ -111,7 +111,7 @@ st.write('The first pie graph represents the total CO2 emissions of each food ca
 st.plotly_chart(px.pie(my_dataset, values='Total_emissions', names='food_category'))
 
 st.write('The pie graph shown below represents the land use change for each food category. Similarly to the total CO2 emissions graph, here you can see that livestock has a significantly higher amount of land use change, with just over 41%. The order of highest to lowest land use change is the exact same as the order of highest to lowest CO2 emissions, showing a clear correlation between the two.')
-st.plotly_Chart(px.pie(my_dataset, values='Land use change', names='food_category'))
+st.plotly_chart(px.pie(my_dataset, values='Land use change', names='food_category'))
 
 st.header('Drawing Conclusions')
 st.write('.....')
