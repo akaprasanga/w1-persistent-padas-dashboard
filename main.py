@@ -95,7 +95,7 @@ fig.update_layout(barmode='stack', xaxis={'categoryorder':'total descending'})
 st.plotly_chart(fig)
 
 st.header('Food Product and Transportation')
-st.write('The relationship between food product and the transportation cost.)
+st.write('The relationship between food product and the transportation cost.')
 fig = px.bar(my_dataset, x='Food product', y='Transport')
 fig.update_layout(barmode='stack', xaxis={'categoryorder':'total descending'})
 #fig.show()
@@ -107,7 +107,6 @@ st.plotly_chart(fig)
 ######################Michael start here
 st.header('Livestock vs. Animal Feed')
 
-#st.plotly_chart(px.imshow(px.bar(my_dataset, values = 'Food product', 'Animal Feed')))
 fig = px.bar(my_dataset, x = 'Food product', y = 'Animal Feed')
 fig.update_layout(barmode='stack', xaxis={'categoryorder':'total descending'})
 st.plotly_chart(fig)
