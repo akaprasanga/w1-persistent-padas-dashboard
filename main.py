@@ -93,7 +93,7 @@ st.plotly_chart(fig)
 st.header('Livestock vs. Animal Feed')
 
 #st.plotly_chart(px.imshow(px.bar(my_dataset, values = 'Food product', 'Animal Feed')))
-fig = px.bar(data_livestock, x = 'Food product', y = 'Animal Feed')
+fig = px.bar(my_dataset, x = 'Food product', y = 'Animal Feed')
 fig.update_layout(barmode='stack', xaxis={'categoryorder':'total descending'})
 st.plotly_chart(fig)
 st.write('Based on the bar graph, milk requires the least amount of animal feed in order to be produced. From the bar graph, we see that the proteins and other products such as cheese, milk, and eggs from farm animals requires a lot of animal feed to be produced')
