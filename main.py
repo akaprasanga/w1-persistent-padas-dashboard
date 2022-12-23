@@ -4,7 +4,7 @@ import plotly.express as px
 import warnings
 import streamlit as st
 import plotly.figure_factory as ff
-warnings.filterwarnings("ignore") 
+warnings.filterwarnings("ignore")
 
 st.title('Environmental Impact of Food')
 st.header('Cool Team Behind This Project')
@@ -15,7 +15,7 @@ st.header('Cool Team Behind This Project')
 st.write("Fiona Law:: Hi, I'm Fiona and I'm a sophomore at Woodbridge High School in California.")
 st.write("Michael Jiang:: Hi, I'm Michael and I'm a freshman at the Gilman School in Baltimore, Maryland.")
 st.write("Nikol Miasik:: Hi, my name is Nikol and I'm a senior at Stelly's Secondary School in BC, Canada.")
-st.write("Edward:: Hello, I am Edward and I am a freshman at Camas high school, Washington")
+st.write("Edward Tang:: Hello, I am Edward and I am a freshman at Camas high school, Washington")
 st.write("Prasanga Neupane:: Hi I am Prasanga and I am instructor of this group.")
 
 
