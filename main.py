@@ -55,7 +55,9 @@ for i, row in my_dataset.iterrows():
 
 st.header('Category of Food')
 st.write('Explanation of how we categorized.' )
-st.write(my_dataset.head(10))
+cols_to_move = ['Food product', 'food_category']
+df = my_dataset[ cols_to_move + [ col for col in my_dataset.columns if col not in cols_to_move ] ]
+st.write(df.head(100))
 
 
 # st.header('Value Counts For Each Feature')
@@ -63,7 +65,7 @@ st.write(my_dataset.head(10))
 
 category = my_dataset.groupby('food_category')
 category_dataset = category.sum()
-
+st.write(category_dataset)
 ##### edited here
 # fiona
 st.header("Correlation Plot Between Food Categories and Columns")
